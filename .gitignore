@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# بيانات تشغيل وحساسة (لا ترفع أبدًا)
+arena_account.json
+arena.cookies.txt
+*.cookies.txt
+.arena_api_cookies.json
+.arena_session.json
+public_url.txt
+cf_tunnel.log
+*.log
+
+# ملفات محلية/بيئات
+.env
+.vscode/
+.idea/
+chrome_profile
+.chrome_profile/
+
+# مجلدات كبيرة أو مؤقتة
+cloudflared.exe
+dist/
+build/
