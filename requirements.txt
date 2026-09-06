@@ -1,0 +1,8 @@
+# أدوات سطر الأوامر (tools/*.py) تعمل بمكتبات Python القياسية فقط — لا تبعيات إضافية مطلوبة.
+#
+# الاعتماديات أدناه خاصة بمحرك المتصفح (browser_agent.py) فقط:
+#   python -m pip install -r requirements.txt
+#   python -m playwright install chrome
+
+playwright>=1.40
+playwright-stealth>=1.0

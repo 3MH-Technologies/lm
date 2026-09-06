@@ -1,5 +1,10 @@
 # 🤖 أتمتة Arena AI — white wolf
 
+[![CI](https://github.com/3MH-Technologies/lm/actions/workflows/ci.yml/badge.svg)](https://github.com/3MH-Technologies/lm/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](requirements.txt)
+[![Playwright](https://img.shields.io/badge/Playwright-✓-green)](browser_agent.py)
+
 منظومة أتمتة لمنصة [arena.ai](https://arena.ai): إنشاء حسابات تلقائي، محادثة مباشرة مع النماذج، بريد مؤقت، وحلّ كابتشا — عبر مجموعة أدوات سطر أوامر بيثون بدون مكتبات خارجية.
 
 ---

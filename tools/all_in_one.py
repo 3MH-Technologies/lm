@@ -15,6 +15,7 @@ import agent_api as _wa
 import captcha_api as _wc
 
 _wolf_mark = 0x0DDB1A3E
+_WOLF_VERSION = "1.0.0"
 
 if hasattr(_wolf_sys.stdout, "reconfigure"):
     _wolf_sys.stdout.reconfigure(encoding="utf-8")
@@ -162,9 +163,15 @@ def _cmd_session(_args):
     return _tool._wolf_main(["session"])
 
 
+def _cmd_version():
+    print(f"lm — أدوات أتمتة Arena AI (white wolf / 3MH TECHNOLOGIES)  الإصدار {_WOLF_VERSION}")
+    return 0
+
+
 def _cmd_prompt_help():
     print("الأداة الشاملة لإدارة أتمتة منصة arena.ai — white wolf")
     print("")
+    print("  version               عرض الإصدار")
     print("  health                فحص سلامة جميع المكونات")
     print("  chat <نص>             إرسال رسالة (عبر الوكيل المحلي افتراضيًا)")
     print("                        [--mode battle|direct] [--model sonnet5|sonnet5-search]")
@@ -192,6 +199,8 @@ def _wolf_main():
     _rest = _args[1:]
     try:
         match _cmd:
+            case "version":
+                return _cmd_version()
             case "health":
                 return _cmd_health()
             case "chat":
